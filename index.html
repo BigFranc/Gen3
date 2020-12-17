@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+  
+    <head>
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+        <script src="libs/bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="ajax/ajax.js"></script>
+        <script type="text/javascript" src="js/gen3.js"></script>
+        <title>Accueil - Gen3/KmerMarket</title>
+    </head>
+
+    <body>
+        <div class="container ">
+            <form class="row ajax" method="post" 
+            id="super_membre">
+              <div class="col order-first">
+                <h3>Le membre : </h3>
+                
+                <!-- Start form user -->
+                <div class="form-group">
+                  <select class="custom-select custom-select-sm">
+                      <label for="prenomMembre">Prénoms</label>
+                      <option value="M" selected>Parent de : </option>
+                      <option value="Mme">Enfant de : </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="petitNomMembre">Pseudonyme</label>
+                    <input type="text" class="form-control" id="petitNomMembre" placeholder="Petit Nom" name="petitNomMembre" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="nomMembre">Noms</label>
+                    <input type="text" class="form-control" id="nomMembre" placeholder="Nom" name="nomMembre" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="prenomMembre">Prénoms</label>
+                    <input type="text" class="form-control" id="prenomMembre" placeholder="Prénom" name="prenomMembre" required>
+                  </div>
+                  
+                <!-- End form user -->
+
+              </div>
+              <!-- end membre -->
+              <!-- start relation -->
+               <div class="col">
+                    <h3>est : </h3>
+                    <select class="custom-select custom-select-sm">
+                        <option value="Parent" selected>Parent de : </option>
+                        <option value="Enfant">Enfant de : </option>
+                        <option value="Fratrie">Frère ou Soeur de : </option>
+                    </select>
+              </div>
+              <!-- end relation -->
+
+              <!-- start les Membres -->
+              <div class="col order-last">
+                    <h3>de : </h3>
+                    <select class="custom-select custom-select-sm">
+                        <option value="1" selected>Membre1</option>
+                        <option value="2">Membre2</option>
+                        <option value="3">Membre3</option>
+                    </select>
+                    <button class="btn btn-lg btn-success btn-block" type="submit">Ajouter</button>
+              </div>
+              <!-- end les Membres -->
+            </form>
+        </div>
+
+    </body>
+</html>
